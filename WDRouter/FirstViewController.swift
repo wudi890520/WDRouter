@@ -46,6 +46,6 @@ extension FirstViewController {
 
 extension FirstViewController {
     func buttonAction() {
-        WDRouter.open(url: "WDRouterTest://home/login?mobile=13945110499", response: nil)
+        WDRouter.open(url: "WDRouterTest://home/login?mobile=139****0499", response: nil)
     }
 }
