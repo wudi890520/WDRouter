@@ -10,9 +10,24 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
+    let firstNavigationController = UINavigationController(rootViewController: FirstViewController())
+    let secondNavigationController = UINavigationController(rootViewController: SecondViewController())
+    let thirdNavigationController = UINavigationController(rootViewController: ThirdViewController())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        firstNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        secondNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 1)
+        thirdNavigationController.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 2)
+        
+        tabBar.tintColor = UIColor(red: 250/255, green: 146/255, blue: 241/255, alpha: 1)
+        
+        
+        viewControllers = [firstNavigationController,
+                           secondNavigationController,
+                           thirdNavigationController]
+        
         // Do any additional setup after loading the view.
     }
 

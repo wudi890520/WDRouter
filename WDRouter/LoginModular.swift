@@ -10,4 +10,12 @@ import UIKit
 
 class LoginModular: NSObject {
 
+    func login(parameters: [String: String]) {
+        print("login action !!")
+        print(parameters)
+        
+        UIAlertView(title: "拨打电话", message: parameters["mobile"], delegate: nil, cancelButtonTitle: "确定").show()
+
+    }
+    
 }

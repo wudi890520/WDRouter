@@ -12,6 +12,17 @@
 		9CAF68F81E26305200CF8606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAF68F61E26305200CF8606 /* Main.storyboard */; };
 		9CAF68FA1E26305200CF8606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAF68F91E26305200CF8606 /* Assets.xcassets */; };
 		9CAF68FD1E26305200CF8606 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAF68FB1E26305200CF8606 /* LaunchScreen.storyboard */; };
+		9CAF69061E2630A900CF8606 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF69051E2630A900CF8606 /* TabBarViewController.swift */; };
+		9CAF69081E2630BC00CF8606 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF69071E2630BC00CF8606 /* FirstViewController.swift */; };
+		9CAF690A1E2630C300CF8606 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF69091E2630C300CF8606 /* SecondViewController.swift */; };
+		9CAF690C1E2634BC00CF8606 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF690B1E2634BC00CF8606 /* DetailViewController.swift */; };
+		9CAF690E1E2636D100CF8606 /* WDRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF690D1E2636D100CF8606 /* WDRouter.swift */; };
+		9CAF69101E26374800CF8606 /* WDRouterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF690F1E26374800CF8606 /* WDRouterRequest.swift */; };
+		9CAF69121E263C2700CF8606 /* WDRouterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF69111E263C2700CF8606 /* WDRouterClass.swift */; };
+		9CAF69141E26427E00CF8606 /* WDRouterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF69131E26427E00CF8606 /* WDRouterExtension.swift */; };
+		9CAF69161E26578800CF8606 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAF69151E26578800CF8606 /* ThirdViewController.swift */; };
+		9CB693781E276D99002A58B0 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB693771E276D99002A58B0 /* Student.swift */; };
+		9CB6937A1E27741D002A58B0 /* LoginModular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB693791E27741D002A58B0 /* LoginModular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		9CAF68F91E26305200CF8606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CAF68FC1E26305200CF8606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CAF68FE1E26305200CF8606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CAF69051E2630A900CF8606 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9CAF69071E2630BC00CF8606 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9CAF69091E2630C300CF8606 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9CAF690B1E2634BC00CF8606 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9CAF690D1E2636D100CF8606 /* WDRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDRouter.swift; sourceTree = "<group>"; };
+		9CAF690F1E26374800CF8606 /* WDRouterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDRouterRequest.swift; sourceTree = "<group>"; };
+		9CAF69111E263C2700CF8606 /* WDRouterClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDRouterClass.swift; sourceTree = "<group>"; };
+		9CAF69131E26427E00CF8606 /* WDRouterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WDRouterExtension.swift; sourceTree = "<group>"; };
+		9CAF69151E26578800CF8606 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		9CB693771E276D99002A58B0 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		9CB693791E27741D002A58B0 /* LoginModular.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModular.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +76,31 @@
 		9CAF68F11E26305200CF8606 /* WDRouter */ = {
 			isa = PBXGroup;
 			children = (
+				9CAF69041E26308A00CF8606 /* WDRouter */,
 				9CAF68F21E26305200CF8606 /* AppDelegate.swift */,
 				9CAF68F41E26305200CF8606 /* ViewController.swift */,
 				9CAF68F61E26305200CF8606 /* Main.storyboard */,
 				9CAF68F91E26305200CF8606 /* Assets.xcassets */,
 				9CAF68FB1E26305200CF8606 /* LaunchScreen.storyboard */,
 				9CAF68FE1E26305200CF8606 /* Info.plist */,
+				9CAF69051E2630A900CF8606 /* TabBarViewController.swift */,
+				9CAF69071E2630BC00CF8606 /* FirstViewController.swift */,
+				9CAF69091E2630C300CF8606 /* SecondViewController.swift */,
+				9CAF69151E26578800CF8606 /* ThirdViewController.swift */,
+				9CAF690B1E2634BC00CF8606 /* DetailViewController.swift */,
+				9CB693771E276D99002A58B0 /* Student.swift */,
+				9CB693791E27741D002A58B0 /* LoginModular.swift */,
+			);
+			path = WDRouter;
+			sourceTree = "<group>";
+		};
+		9CAF69041E26308A00CF8606 /* WDRouter */ = {
+			isa = PBXGroup;
+			children = (
+				9CAF690D1E2636D100CF8606 /* WDRouter.swift */,
+				9CAF690F1E26374800CF8606 /* WDRouterRequest.swift */,
+				9CAF69111E263C2700CF8606 /* WDRouterClass.swift */,
+				9CAF69131E26427E00CF8606 /* WDRouterExtension.swift */,
 			);
 			path = WDRouter;
 			sourceTree = "<group>";
@@ -138,7 +179,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CAF68F51E26305200CF8606 /* ViewController.swift in Sources */,
+				9CAF69061E2630A900CF8606 /* TabBarViewController.swift in Sources */,
+				9CAF690E1E2636D100CF8606 /* WDRouter.swift in Sources */,
 				9CAF68F31E26305200CF8606 /* AppDelegate.swift in Sources */,
+				9CAF690C1E2634BC00CF8606 /* DetailViewController.swift in Sources */,
+				9CAF69141E26427E00CF8606 /* WDRouterExtension.swift in Sources */,
+				9CAF69101E26374800CF8606 /* WDRouterRequest.swift in Sources */,
+				9CB693781E276D99002A58B0 /* Student.swift in Sources */,
+				9CAF69121E263C2700CF8606 /* WDRouterClass.swift in Sources */,
+				9CAF69161E26578800CF8606 /* ThirdViewController.swift in Sources */,
+				9CB6937A1E27741D002A58B0 /* LoginModular.swift in Sources */,
+				9CAF690A1E2630C300CF8606 /* SecondViewController.swift in Sources */,
+				9CAF69081E2630BC00CF8606 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +352,7 @@
 				9CAF69031E26305200CF8606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

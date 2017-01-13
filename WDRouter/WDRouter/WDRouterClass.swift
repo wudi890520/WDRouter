@@ -8,11 +8,23 @@
 
 import UIKit
 
-let WDRouterClass = <#value#>
+class WDRouterClass: NSObject {
 
-
-class WDRouterClasse: NSObject {
-
+    static let shared = WDRouterClass()
     
+    let homeDetail = "home/detail"
+    let loginAction = "home/login"
     
+    private var _URLDictionary = Dictionary<String, Any>()
+    var URLDictionary: Dictionary<String, Any> {
+        get {
+            if _URLDictionary.keys.count == 0 {
+                _URLDictionary = [homeDetail: DetailViewController.self,
+                                  loginAction: [LoginModular.self, #selector(LoginModular.login(parameters:))]]
+                
+            }
+            return _URLDictionary
+        }
+    }
+
 }

@@ -10,9 +10,15 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    let pushButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.white
+        print(self)
+        loadUI()
+        targets()
+        title = "ONE"
         // Do any additional setup after loading the view.
     }
 
@@ -20,16 +26,26 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension FirstViewController {
+    func loadUI() {
+        pushButton.frame = CGRect(x: 0, y: 0, width: 120, height: 44)
+        pushButton.center = view.center
+        pushButton.backgroundColor = UIColor.red
+        pushButton.setTitle("执行一个方法", for: .normal)
+        pushButton.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+        view.addSubview(pushButton)
     }
-    */
+    
+    func targets() {
+        pushButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+    }
+}
 
+extension FirstViewController {
+    func buttonAction() {
+        WDRouter.open(url: "WDRouterTest://home/login?mobile=13945110499", response: nil)
+    }
 }
